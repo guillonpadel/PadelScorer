@@ -21,12 +21,18 @@
             android:name=".MainActivity"
             android:configChanges="keyboard|keyboardHidden|navigation"
             android:exported="true"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
+
+            <!-- Declarar que esta app maneja las teclas de volumen -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="" />
 
         </activity>
     </application>
