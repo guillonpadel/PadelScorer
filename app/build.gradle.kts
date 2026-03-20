@@ -47,5 +47,6 @@ dependencies {
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.androidx.tv.foundation)
     implementation(libs.androidx.tv.material)
-implementation("androidx.leanback:leanback:1.0.0")
+    implementation(libs.androidx.leanback)
+    implementation(libs.androidx.appcompat)
 }
